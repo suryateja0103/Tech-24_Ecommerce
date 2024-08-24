@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+   <meta charset="utf-8">
+   <title>Glowing Inputs Login Form UI</title>
+   <link rel="stylesheet" href="login.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+   <div class="login-form">
+      <div class="text">LOGIN</div>
+      <form id="loginForm">
+         <div class="field">
+            <div class="fas fa-envelope"></div>
+            <input type="text" placeholder="Email or Phone">
+         </div>
+         <div class="field">
+            <div class="fas fa-lock"></div>
+            <input type="password" placeholder="Password">
+         </div>
+         <button type="button" onclick="redirectToNextPage()">LOGIN</button>
+         <div class="link">
+            Not a member? <a href="index.html">Signup now</a>
+         </div>
+      </form>
+   </div>
+
+   <script>
+      function redirectToNextPage() {
+         // You can add any validation logic here if needed
+         window.location.href = "index.html"; // Replace with the path to your next page
+      }
+   </script>
+</body>
+</html>
