@@ -8,38 +8,46 @@
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Nike Store</title>
+    <link rel="icon" href="img/logo.png" type="image/png">
+
 </head>
 <body>
     <nav id="nav">
         <div class="navTop">
+            <!-- Logo -->
+            <div class="navItem logoContainer">
+                <img src="img/logo.png" alt="Nike Store Logo" class="logo" style="width: 75px;">
+            </div>
+            <!-- Search and Login -->
             <div class="navItem searchContainer">
-                <div class="search" >
+                <div class="search">
                     <input class="searchInput" type="text" placeholder="Search">
                     <button type="submit" class="searchButton">
-                        <img src="img\search.png" alt="Search" class="searchIcon">
+                        <img src="img/search.png" alt="Search" class="searchIcon">
                     </button>
                 </div>
                 <div class="navItem loginContainer">
                     <button class="loginButton" onclick="redirectToLogin()">
-                       <img src="img/login.png" alt="Login" class="loginIcon">
+                        <img src="img/login.png" alt="Login" class="loginIcon">
                     </button>
-                 </div>
-                 <script>
-                    function redirectToLogin() {
-                       window.location.href = "login.html";
-                    }
-                 </script>
-
+                </div>
             </div>
+            <script>
+                function redirectToLogin() {
+                    window.location.href = "login.html";
+                }
+            </script>
+            <!-- Menu -->
             <div class="navItem menuCenter">
-                <h3 class="menuItem"><strong>FORCE</strong> </h3>
+                <h3 class="menuItem"><strong>FORCE</strong></h3>
                 <h3 class="menuItem"><strong>JORDAN</strong></h3>
                 <h3 class="menuItem"><strong>BLAZER</strong></h3>
                 <h3 class="menuItem"><strong>CRATER</strong></h3>
                 <h3 class="menuItem"><strong>HIPPIE</strong></h3>
             </div>
         </div>
-    </nav> 
+    </nav>
+     
     <div class="slider">
         <div class="sliderWrapper">
             <div class="sliderItem">
